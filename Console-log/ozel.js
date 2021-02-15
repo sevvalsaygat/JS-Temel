@@ -1,0 +1,1 @@
+alert("Udemy Javascript Kursuna Hoşgeldiniz ...");
