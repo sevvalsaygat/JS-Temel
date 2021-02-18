@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript</title>
+
+    <script type="text/javascript">
+
+        //Kullanıcı Adı-Şifre Doğrulama
+
+        var kullanici= "sevvalsaygat"
+        var sifre= 12345;
+
+        if (kullanici==="sevvalsaygat" && sifre===12345) {
+            console.log(" Tebrikler giriş başarılı...");
+
+        }else if (kullanici==="sevvalsaygat"){
+            console.log("Siz Şevval olabilir misiniz?");
+        }else {
+            console.log("Giriş yapılamadı.Lütfen bilgilerinizi kontrol edin.")
+        }
+
+        //2. Yol
+
+        var kullanici="sevval"
+        var sifre= 12345;
+
+        var girkullanici="sevval"
+        var girsifre=12345;
+
+        if (kullanici==girkullanici && sifre==girsifre) {
+            console.log("Giriş başarılı")
+        }else if (kullanici=="sevval"){
+            console.log("Siz Şevval olabilir misiniz?")
+        }else {
+            console.log("Tekrar Deneyiniz")
+        }
+
+        //EN BÜYÜK SAYIYI BULMA
+
+        var a=10;
+        var b=20;
+        var c=30;
+
+        if (a>=b && a>=c){
+            console.log("A sayılar arasında en büyük olan sayıdır.")
+        }else if (b>=a && b>=c){
+            console.log("B sayılar arasında en büyük olan sayıdır.")
+        }else if (c>=a && c>=b){
+            console.log("C sayılar arasında en büyük olan sayıdır.")
+        }
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
