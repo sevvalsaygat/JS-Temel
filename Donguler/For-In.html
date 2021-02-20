@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript</title>
+
+    <script type="text/javascript">
+
+        /*
+         For In Döngüsü
+         Key => Array ve Objelerin içinde tanımladığımız değerler.Key'den farklı isimler de alabilirler.
+        */
+
+        var kurslar={kurs1:"Php",kurs2:"Bootstrap"};
+
+        for(key in kurslar) {
+
+            document.write(kurslar[key]+ "<br>");
+        }
+
+
+        //Dizi Örneği
+
+        var egitimler = new Array("php","boostrap","JQuery");
+
+        for (key in egitimler) {
+            document.write(egitimler[key]+"<br>");
+        }
+
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
