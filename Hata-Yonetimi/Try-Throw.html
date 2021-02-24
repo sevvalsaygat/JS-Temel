@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript</title>
+    <script type="text/javascript">
+
+        //Try Throw => Kendi hata bloklarımızı oluşturmada kullanırız.
+
+        var a=20;
+        var b=20;
+
+
+        try{
+
+            if (a<b) {
+                throw "büyük";
+            }
+            if (a==b){
+                throw "eşit";
+            }
+            document.write(a+" ve "+b);
+
+        }catch(err) {
+
+            if (err=="büyük"){
+                document.write("a sayısı b den büyük olamaz");
+            }
+            document.write(err);
+        }
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
