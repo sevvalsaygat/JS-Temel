@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript</title>
+    <script type="text/javascript">
+
+
+        
+            //Dizi Fonksiyonlar
+
+            // toString => Ögeler virgül ile ayrılırlar.
+
+        var kurslar = new Array(1,"Php","Bootstrap4","JQery","Javascript");
+
+        document.write(kurslar.toString());
+        //document.write(kurslar.toString());
+
+                document.write("<br>")
+
+            //Join => Ayracı biz belirleyebiliriz.
+
+        var kurslar = new Array(2,"Php","Bootstrap4","JQery","Javascript");
+
+        document.write(kurslar.join("-"));
+
+                document.write("<br>")
+
+            //Pop => Dizi içindeki son ögeyi getirir. Daha sonra dizi çağırılırsa son öge kalkmış olarak gelir.
+
+        var kurslar = new Array(3,"Php","Bootstrap4","JQery","Javascript");
+
+        document.write(kurslar.pop() +"<br>");
+        document.write(kurslar);
+
+                document.write("<br>")
+
+            //Push => Dizi sonuna ekleme yapar.
+
+        var kurslar = new Array(4,"Php","Bootstrap4","JQery","Javascript");
+
+        document.write(kurslar);
+        document.write(kurslar.push("Udemy") +"<br>");  // dizi içinde kaçıncı öge olduğunu gösterir.
+        document.write(kurslar); // diziye ögeyi ekler.
+
+                document.write("<br>")
+
+            //Shift => Dizinin ilk ögesini kaldırır ve diğer ögeleri daha düşük indise kaydırır.
+
+        var kurslar = new Array(5,"Php","Bootstrap4","JQery","Javascript");
+
+        document.write(kurslar+"<br>");
+        kurslar.shift();
+        document.write(kurslar);
+
+                document.write("<br>")
+
+            //Unshift => Diziye yeni bir öge eklememizi sağlar.
+
+        document.write(kurslar[0]+"<br>");
+        kurslar.unshift("Php");
+        document.write(kurslar);
+
+                document.write("<br>")
+
+            //Splice => Yeni eleman eklemeye ve yerlerini belirtmeye yarar.
+
+        var kurslar = new Array(6,"Php","Bootstrap4","JQery","Javascript");
+
+        document.write(kurslar+"<br>");
+        //kurslar.splice(2,0,"1","2");
+
+        kurslar.splice(2,2);   // 2. indisten sonra 2 ögeyi kaldır.
+        document.write(kurslar+"<br>");
+
+            //Delete => Silinen öge geri gelmez ve indis numarasını bloke eder.
+
+        var kurslar = new Array(7,"Php","Bootstrap4","JQery","Javascript");
+
+        delete kurslar[1];
+        document.write(kurslar+"<br>");
+        document.write(kurslar[0]+"<br>");
+
+            //Concat => Var olan dizileri birleştirerek yeni bir dizi oluşturur.
+
+        var kurs1 = new Array(8,"Php","Bootstrap4");
+        var kurs2 = new Array("JQery","Javascript");
+        var kurs3 = new Array("Java","C#");
+
+        document.write(kurs1+"<br>");
+        document.write(kurs2+"<br>");
+
+        var kurslar = kurs1.concat(kurs2,kurs3);
+
+        document.write(kurslar+"<br>");
+
+            //Slice => Belirttiğimiz indis numarası dahil dizileri ayırabiliriz.
+
+        var kurslar = new Array(9,"Php","Bootstrap4","JQery","Javascript");
+
+        document.write(kurslar+"<br>");
+        ayir= kurslar.slice(1,3); // arasındaki sayıları getirir.
+        document.write(ayir+"<br>");
+
+            //Lenght => Dizinin eleman sayısını verir.
+
+        var kurslar = new Array(10,"Php","Bootstrap4","JQery","Javascript",5,6,7,8,9,10);
+        var say= kurslar.length;
+
+        document.write("Bu dizinin eleman sayısı :"+kurslar.length+"<br>");
+
+            for (i=0; i<say; i++) {
+
+                document.write(kurslar[i]+"<br>");
+
+            }
+
+            //Reverse => Dizinin ögelerini en sondan, en başa şeklinde yazdırır.
+
+        var kurslar = new Array(11,"Php","Bootstrap4","JQery","Javascript",5,6,7,8,9,10);
+
+        document.write(kurslar+"<br>");
+        kurslar.reverse();
+            document.write(kurslar);
+
+            //Sort => Dizinin elemanlarını alfabeye göre sıralar.Numaralar ve baş harf büyük,küçüklüğüne göre sıralanır.
+
+        var kurslar = new Array(12,"Php","Bootstrap4","JQery","Javascript",5,6,7,8,9,"Azra");
+
+        document.write(kurslar+"<br>");
+        kurslar.sort();
+        document.write(kurslar);
+        document.write("<br>");
+
+            //Indexof => Verilen dizi elemanının kaçıncı indis olduğunu söyler.
+
+        var kurslar = new Array("Php","Bootstrap4","JQery","Javascript",5,6,7,8,9,"Azra");
+
+        document.write(kurslar.indexOf("Javascript"));
+        document.write("<br>");
+
+            //Some => Dizi elemanlarının belirtilen şartlara uyup uymadığını kontrol eder.
+
+        var yas= new Array(5,8,9,11,30,40);
+
+        function yasKontrol(events){
+            return events >=18;
+        }
+
+        document.write(yas.some(yasKontrol));
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
