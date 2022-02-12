@@ -5,7 +5,7 @@
     <title>Javascript</title>
     <script type="text/javascript">
 
-        // Koşul Operatörü
+    // Koşul Operatörü =>kısa if de diyebiliriz.
 
         var a=20;
         var b=21;
@@ -17,17 +17,24 @@
         var ad= true;
         console.log(typeof ad);
 
-        // Void Operatörü
-
-
-
     </script>
 </head>
 <body>
-<a href="javascript:void(0)"><p>İLK DOSYAM</p></a>
+
+    <!-- Void Operatörü => boş bağlantıya çevirir. -->
+
+        <a href="javascript:void(0)"><p>İLK DOSYAM</p></a>
+    
+    <!-- Void Operatörü => hemen çağırılan işlemi ekrana yansıtır. -->
 
         <a href="javascript:void(
-            document.body.style.backgroundColor='green');">
+            document.body.style.backgroundColor='pink');">
             Arkaplanı değiştir</a>
+        
+            <hr>
+
+        <a href="javascript:void(
+            document.body.style.backgroundColor='white');">
+            Eski haline getir</a>    
 </body>
 </html>
